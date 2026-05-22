@@ -14,7 +14,10 @@ const JoinForm = () => {
     e.preventDefault();
     setStatus(null);
     try {
-      await api.post("/api/join", formData);
+      await axios.post(
+        "https://wespeak.onrender.com/api/join",
+        formData
+      );      
       setStatus({ success: true, message: "Request submitted successfully!" });
       setFormData({ name: "", email: "", department: "" });
     } catch (err) {
