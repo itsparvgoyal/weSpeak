@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import api from "../services/api";
-
+import axios from "axios";
 const JoinForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "", department: "" });
   const [status, setStatus] = useState(null);
