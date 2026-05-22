@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import api from "../services/api";
 
 const JoinForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "", department: "" });
@@ -14,7 +14,7 @@ const JoinForm = () => {
     e.preventDefault();
     setStatus(null);
     try {
-      await axios.post("/api/join", formData);
+      await api.post("/api/join", formData);
       setStatus({ success: true, message: "Request submitted successfully!" });
       setFormData({ name: "", email: "", department: "" });
     } catch (err) {
