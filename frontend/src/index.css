@@ -1,0 +1,64 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global layout */
+html,
+body,
+#root {
+  height: 100%;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom utilities */
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Transition utilities */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover glow */
+.hover\:glow:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Hide scrollbar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
