@@ -103,7 +103,9 @@ frontend/
 │
 ├── package.json
 ├── vite.config.js
-└── tailwind.config.js
+├── tailwind.config.js
+└── config files
+
 ```
 
 ---
@@ -123,7 +125,6 @@ backend/
 │   └── join.js
 │
 ├── server.js
-├── .env
 ├── package.json
 └── package-lock.json
 ```
@@ -166,7 +167,7 @@ MONGODB_URI=your_mongodb_connection_string
 ## 1. Clone Repository
 
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/itsparvgoyal/weSpeak.git
 ```
 
 ---
